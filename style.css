@@ -38,3 +38,32 @@ body {
     width: 30%;
     height: 10vh;
 }
+
+/* Conteúdo principal */
+.article-main {
+    display: flex;
+    align-items: center;
+}
+
+.section-article {
+    background-color: var(--article);
+    width: 70%;
+    height: 30vh;
+    margin-top: 100px;
+}
+
+/* Barra lateral */
+.aside-main{
+    display: flex;
+    gap: 1rem;
+    width: 30%;
+    height: 30vh;
+    background-color: aquamarine;
+}
+
+.section-aside {
+    background-color: var(--aside);
+    width: 30%;
+    height: 15vh;
+    gap: 1rem;
+}
