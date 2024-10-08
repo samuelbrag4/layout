@@ -20,3 +20,21 @@ body {
     height: 80vh;
     padding: 3vh;
 }
+
+/* Cabeçalho da página */
+.header-main {
+    display: flex;
+    gap: 1rem;
+}
+
+.section-header {
+    background-color: var(--header);
+    width: 70%;
+    height: 10vh;
+}
+
+.aside-header {
+    background-color: var(--header);
+    width: 30%;
+    height: 10vh;
+}
