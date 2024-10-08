@@ -1,0 +1,22 @@
+/* Variáveis */
+:root {
+    --body: #AD9F3C;
+    --main: #5E7343;
+    --header: #032820;
+    --article: #80A416;
+    --aside: #C5C764;
+    --footer: #08652C;
+}
+
+/* Configurações do corpo */
+body {
+    background-color: var(--body);
+}
+
+/* Conteúdo principal (main) */
+.main-site {
+    background-color: var(--main);
+    width: 80vh;
+    height: 80vh;
+    padding: 3vh;
+}
