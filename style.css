@@ -1,69 +1,83 @@
-/* Variáveis */
+/* Definindo as cores no :root */
 :root {
-    --body: #AD9F3C;
-    --main: #5E7343;
-    --header: #032820;
-    --article: #80A416;
-    --aside: #C5C764;
-    --footer: #08652C;
+    --color-header: #ff5e50;
+    --color-main: #ffa727;
+    --color-aside: #a02a99;
+    --color-footer: #004f54;
+    --color-background: #ffffff;
 }
 
-/* Configurações do corpo */
+/* Reset básico */
+* {
+    margin: 1vh;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o body */
 body {
-    background-color: var(--body);
+    font-family: Arial, sans-serif;
+    background-color: var(--color-background);
 }
 
-/* Conteúdo principal (main) */
+/* Estrutura principal do site */
 .main-site {
-    background-color: var(--main);
-    width: 80vh;
-    height: 80vh;
-    padding: 3vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Cabeçalho da página */
+/* Header */
 .header-main {
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
 }
 
 .section-header {
-    background-color: var(--header);
     width: 70%;
-    height: 10vh;
+    height: 15vh;
+    background-color: var(--color-header);
 }
 
 .aside-header {
-    background-color: var(--header);
     width: 30%;
-    height: 10vh;
+    background-color: var(--color-header);
 }
 
-/* Conteúdo principal */
+/* Área principal */
 .article-main {
     display: flex;
-    align-items: center;
+    flex: 2;
+    padding: 20px;
 }
 
 .section-article {
-    background-color: var(--article);
-    width: 70%;
-    height: 30vh;
-    margin-top: 100px;
+    background-color: var(--color-main);
+    flex: 2;
+    margin-right: 10px;
 }
 
 /* Barra lateral */
-.aside-main{
+.aside-main {
     display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 30vh;
-    background-color: aquamarine;
+    flex-direction: column;
+    flex: 1;
 }
 
 .section-aside {
-    background-color: var(--aside);
-    width: 30%;
-    height: 15vh;
-    gap: 1rem;
+    flex: 1;
+    background-color: var(--color-aside);
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-footer {
+    width: 40vh;
+    background-color: var(--color-footer);
+    height: 100px;
 }
