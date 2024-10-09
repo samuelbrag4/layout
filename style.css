@@ -16,26 +16,28 @@
 
 /* Estilizando o body */
 body {
-    font-family: Arial, sans-serif;
     background-color: var(--color-background);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 /* Estrutura principal do site */
 .main-site {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Para garantir que ocupe a tela toda */
 }
 
 /* Header */
 .header-main {
     display: flex;
     justify-content: space-between;
+    height: 20vh; /* Mantendo o tamanho da header fixo */
 }
 
 .section-header {
     width: 70%;
-    height: 15vh;
     background-color: var(--color-header);
 }
 
@@ -47,25 +49,22 @@ body {
 /* Área principal */
 .article-main {
     display: flex;
-    flex: 2;
-    padding: 20px;
+    height: calc(100vh - 40vh); /* Calcula o tamanho da área principal com base na altura da header e do footer */
 }
 
 .section-article {
+    width: 60%;
     background-color: var(--color-main);
-    flex: 2;
-    margin-right: 10px;
 }
 
-/* Barra lateral */
 .aside-main {
+    width: 40%;
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 .section-aside {
-    flex: 1;
+    flex-grow: 1;
     background-color: var(--color-aside);
     margin-bottom: 10px;
 }
@@ -74,10 +73,10 @@ body {
 .footer-main {
     display: flex;
     justify-content: space-between;
+    height: 20vh; /* Mantendo o tamanho do rodapé fixo */
 }
 
 .section-footer {
-    width: 40vh;
+    width: 70vh;
     background-color: var(--color-footer);
-    height: 100px;
 }
